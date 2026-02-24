@@ -1,198 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic SEO Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional Search Engine Optimization services to boost website traffic, rankings, and online visibility.">
-    <meta name="keywords" content="SEO services, search engine optimization, digital marketing, website ranking">
-    <meta name="author" content="SEO Simplified">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Simplified | Premium SEO Solutions</title>
 
-    <title>SEO Services | Grow Your Online Visibility</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f5f7fa;color:#333;scroll-behavior:smooth}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+/* NAVBAR */
+nav{
+position:fixed;top:0;width:100%;
+background:rgba(15,32,39,0.9);
+padding:15px 40px;
+display:flex;justify-content:space-between;align-items:center;
+z-index:1000;
+}
+nav a{color:#fff;text-decoration:none;margin-left:25px;font-weight:500}
+nav span{font-weight:700;color:#00c6ff}
 
-        body {
-            line-height: 1.6;
-            color: #333;
-            background-color: #ffffff;
-        }
+/* HERO */
+header{
+height:100vh;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+header h1{font-size:3.8rem}
+header p{max-width:700px;margin:20px auto;font-size:1.2rem}
 
-        header {
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            color: #fff;
-            padding: 80px 20px;
-            text-align: center;
-        }
+/* SECTION */
+section{padding:100px 20px;max-width:1200px;margin:auto}
+h2{text-align:center;font-size:2.6rem;margin-bottom:30px}
 
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
+/* CARDS */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px
+}
+.card{
+background:#fff;
+padding:40px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+transition:0.4s
+}
+.card:hover{transform:translateY(-12px)}
 
-        header p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: auto;
-        }
+/* CTA */
+.cta{
+background:linear-gradient(135deg,#203a43,#2c5364);
+color:#fff;
+text-align:center;
+padding:80px 20px
+}
+.cta a{
+display:inline-block;
+margin-top:20px;
+padding:15px 40px;
+background:#00c6ff;
+color:#fff;
+border-radius:40px;
+text-decoration:none;
+font-weight:600
+}
 
-        section {
-            padding: 70px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
+/* FOOTER */
+footer{
+background:#0f2027;
+color:#ccc;
+text-align:center;
+padding:30px
+}
 
-        .image-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
+/* SCROLL ANIMATION */
+.reveal{opacity:0;transform:translateY(40px);transition:1s}
+.reveal.active{opacity:1;transform:none}
 
-        .image-section img {
-            width: 100%;
-            border-radius: 15px;
-            height: 280px;
-            object-fit: cover;
-        }
-
-        h2 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-            color: #0f2027;
-        }
-
-        p {
-            margin-bottom: 15px;
-            color: #555;
-        }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .service-box {
-            background: #f9f9f9;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-        }
-
-        .service-box h3 {
-            margin-bottom: 15px;
-            color: #203a43;
-        }
-
-        .cta {
-            background: #203a43;
-            color: #fff;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .cta h2 {
-            color: #fff;
-            margin-bottom: 20px;
-        }
-
-        .cta a {
-            display: inline-block;
-            background: #00c6ff;
-            color: #fff;
-            padding: 15px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s ease;
-        }
-
-        .cta a:hover {
-            background: #0072ff;
-        }
-
-        footer {
-            background: #0f2027;
-            color: #ccc;
-            text-align: center;
-            padding: 25px 10px;
-            font-size: 0.9rem;
-        }
-    </style>
+@media(max-width:600px){
+header h1{font-size:2.5rem}
+}
+</style>
 </head>
 
 <body>
 
-    <!-- HERO SECTION -->
-    <header>
-        <h1>Search Engine Optimization</h1>
-        <p>Improve your website rankings, increase organic traffic, and grow your digital presence with powerful SEO strategies.</p>
-    </header>
+<nav>
+<span>SEO Simplified</span>
+<div>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="team.html">Team</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
 
-    <!-- ABOUT SEO -->
-    <section>
-        <h2>Why SEO Matters</h2>
-        <p>
-            Search Engine Optimization (SEO) helps your website rank higher on search engines like Google. 
-            A well-optimized website attracts quality traffic, builds credibility, and increases conversions.
-        </p>
+<header>
+<div class="reveal">
+<h1>Premium SEO, Simplified</h1>
+<p>Helping brands rank higher, grow faster, and convert better through clear SEO strategies.</p>
+</div>
+</header>
 
-        <div class="image-section">
-            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7" alt="SEO analytics dashboard">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Website optimization process">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Team working on SEO strategy">
-        </div>
-    </section>
+<section>
+<h2 class="reveal">Why Choose SEO Simplified?</h2>
+<div class="grid">
+<div class="card reveal">Clear SEO strategies with measurable growth</div>
+<div class="card reveal">Google-friendly & future-proof optimization</div>
+<div class="card reveal">Premium execution with real results</div>
+</div>
+</section>
 
-    <!-- SERVICES -->
-    <section>
-        <h2>Our SEO Services</h2>
+<section class="cta">
+<h2 class="reveal">Let’s Grow Your Visibility</h2>
+<a href="contact.html">Get Started</a>
+</section>
 
-        <div class="services">
-            <div class="service-box">
-                <h3>On-Page SEO</h3>
-                <p>Optimizing content, keywords, meta tags, and website structure for better search visibility.</p>
-            </div>
+<footer>
+<p>© 2026 SEO Simplified</p>
+</footer>
 
-            <div class="service-box">
-                <h3>Technical SEO</h3>
-                <p>Improving site speed, mobile responsiveness, indexing, and crawlability.</p>
-            </div>
-
-            <div class="service-box">
-                <h3>Content Optimization</h3>
-                <p>Creating SEO-friendly content that attracts users and search engines.</p>
-            </div>
-
-            <div class="service-box">
-                <h3>Keyword Research</h3>
-                <p>Finding high-impact keywords that bring targeted and relevant traffic.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CALL TO ACTION -->
-    <section class="cta">
-        <h2>Ready to Rank Higher on Google?</h2>
-        <p>Let us help you grow your business with proven SEO strategies.</p>
-        <a href="#">Get Started Today</a>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Your Brand Name | SEO & Digital Growth</p>
-    </footer>
+<script>
+const reveals=document.querySelectorAll(".reveal");
+window.addEventListener("scroll",()=>{
+reveals.forEach(r=>{
+const top=r.getBoundingClientRect().top;
+if(top<window.innerHeight-100){r.classList.add("active")}
+})
+});
+</script>
 
 </body>
 </html>
