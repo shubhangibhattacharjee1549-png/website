@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sparkly-kulfi-e9ba0e.netlify.app/sitemap.xml
